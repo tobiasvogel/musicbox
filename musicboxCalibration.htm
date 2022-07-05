@@ -1,5 +1,5 @@
 
-<select id=webMidiSelect></select>
+Select MIDI Out Device: <select id=webMidiSelect></select>
 
 <form>
 <table></table>
@@ -11,6 +11,11 @@
 
 
 <div id=sendtest></div>
+<div id=cOffset style='float:left;'><pre>s8 offset[]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};</pre></div>
+<button onclick='copy_cOffset();'>Copy</button>
+
+<div id=note style='float:none;clear:both;'><small>Note: you can paste offset-strings directly onto this page.</small></div>
+
 <script>
 noteLookup = [ 
   48, //C3
@@ -62,6 +67,12 @@ for (var i=1;i<=30;i++){
 }
 document.getElementById('sendtest').innerHTML=s;
 
+function formatOffsetString(val) {
+	var str = document.getElementById('cOffset');
+	str.innerHTML="<pre>s8 offset[]=" +
+		(val.replace("[","{")).replace("]","}") +
+		";</pre>";
+}
 //document.querySelector('form').onchange=function(){
 function calib(obj, n){
   var a=[]
@@ -69,6 +80,8 @@ function calib(obj, n){
     a.push(1*document.getElementById('num_'+i).value);
   }
   tex.value=JSON.stringify(a);
+
+  formatOffsetString(tex.value);
 
   midiOut.send( [ 0xAA, n-1, obj.value*1+64 ] )
 }
@@ -85,7 +98,27 @@ function send(i){
     setTimeout( function(){send(i)}, 300)
   }
 }
-
+function copy_cOffset() {
+  //var copyText = document.getElementById('cOffset').innerText;
+  if (document.selection) {
+    var range = document.body.createTextRange();
+    range.moveToElementText(document.getElementById('cOffset'));
+    range.select();
+  } else if (window.getSelection()) {
+    var range = document.createRange();
+    range.selectNode(document.getElementById('cOffset'));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+  }
+  document.execCommand('copy');
+}
+function paste_cOffset(clipVal) {
+  let result = clipVal.match(/(?:-?[0-9]+\s?,\s?){29}(?:-?[0-9]+\s?)/);
+  if (result != null) {
+    tex.value=("["+result+"]");
+    load();
+  }
+}
 
 midiOut=null;
 function populatemidiOutSelect() {
@@ -113,6 +146,10 @@ window.addEventListener("load",function() {
   });
 });
 
-
+document.addEventListener('paste', function (event) {
+  var clipText = event.clipboardData.getData('Text');
+  console.log(clipText);
+  paste_cOffset(clipText);
+});
 
 </script>
