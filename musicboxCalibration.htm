@@ -1,3 +1,35 @@
+<style type='text/css'>
+  body,html {
+    font-family: Helvetica, Arial, 'Open Sans', sans-serif;
+  }
+  fieldset {
+    margin-bottom: 12px;
+    padding: 10px 0 10px 12px;
+  }
+  fieldset legend {
+    font-weight: 600;
+    padding: 0 6px;
+    margin-left: -8px;
+  }
+  div#cOffset pre {
+    background-color: #efefef;
+    padding: 8px 6px;
+    float: left;
+  }
+  div#cOffset_button button {
+    margin: 18px 0 0 12px;
+  }
+  div#sendtest button {
+    margin-right: 2px;
+  }
+  textarea {
+    margin-right: 8px;
+  }
+  div#note {
+    padding-left: 22px;
+    font-style: italic;
+  }
+</style>
 
 <fieldset>
   <legend>MIDI Out Device</legend>
@@ -28,17 +60,22 @@
 <fieldset>
   <legend>Values</legend>
   <textarea style='width:800px'></textarea><button onclick='load();'>Load</button>
+</fieldset>
 
-<div id=sendtest></div>
+<fieldset>
+  <legend>Test</legend>
+  <div id=sendtest></div>
 </fieldset>
 
 <fieldset>
   <legend>Source code</legend>
-  <div id=cOffset style='float:left;'><pre>s8 offset[]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};</pre></div>
+  <div id=cOffset><pre>s8 offset[]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};</pre></div>
+  <div id=cOffset_button>
   <button onclick='copy_cOffset();'>Copy</button>
+  </div>
 </fieldset>
 
-<div id=note style='float:none;clear:both;'><small>Note: you can paste offsets directly onto this page.</small></div>
+<div id=note><small>Note: you can paste offsets directly onto this page.</small></div>
 
 <script>
 noteLookup = [ 
@@ -72,7 +109,7 @@ noteLookup = [
   84, //C6
   86, //D6
   88
-]
+];
 
 if (window.location.search.substring(1) == 'wrapped') {
   document.getElementById('straightOrder').checked = false;
@@ -103,10 +140,10 @@ for (var i=1;i<=30;i++){
 document.getElementById('sendtest').innerHTML=s;
 
 function formatOffsetString(val) {
-	var str = document.getElementById('cOffset');
-	str.innerHTML="<pre>s8 offset[]=" +
-		(val.replace("[","{")).replace("]","}") +
-		";</pre>";
+  var str = document.getElementById('cOffset');
+  str.innerHTML="<pre>s8 offset[]=" +
+    (val.replace("[","{")).replace("]","}") +
+    ";</pre>";
 }
 //document.querySelector('form').onchange=function(){
 function calib(obj, n){
