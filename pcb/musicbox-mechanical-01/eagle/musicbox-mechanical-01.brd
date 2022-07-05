@@ -1,0 +1,1341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.6.2">
+<drawing>
+<settings>
+<setting alwaysvectorfont="yes"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="2.5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="100" name="Construction" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="V-Score" color="10" fill="1" visible="yes" active="yes"/>
+</layers>
+<board>
+<plain>
+<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
+<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
+<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
+<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="5" y1="6" x2="4.5" y2="6.5" width="0" layer="20" curve="-90"/>
+<wire x1="5" y1="92.5" x2="4.5" y2="92" width="0" layer="20" curve="90"/>
+<wire x1="155" y1="92.5" x2="155.5" y2="92" width="0" layer="20" curve="-90"/>
+<wire x1="155" y1="6" x2="155.5" y2="6.5" width="0" layer="20" curve="90"/>
+<wire x1="155.5" y1="6.5" x2="155.5" y2="92" width="0" layer="20"/>
+<wire x1="4.5" y1="6.5" x2="4.5" y2="92" width="0" layer="20"/>
+<wire x1="160.5" y1="8" x2="-6.5" y2="8" width="0.254" layer="101"/>
+<text x="-6.5" y="8" size="1.016" layer="101" ratio="12" distance="80" align="center-left">
+V-CUT</text>
+</plain>
+<libraries>
+<library name="music-box-parts">
+<packages>
+<package name="PRONG-08">
+<wire x1="0" y1="-1" x2="0" y2="66.429" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="66.429" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="66.429" x2="2.075" y2="66.429" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="62.629" drill="1.1"/>
+<wire x1="0" y1="66.429" x2="-1" y2="68.129" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="66.429" x2="3" y2="68.129" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="68.129" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="68.129" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="66.479" drill="0.41"/>
+<hole x="2.16" y="66.479" drill="0.41"/>
+<hole x="0.255" y="67.094" drill="0.45"/>
+<hole x="1.745" y="67.094" drill="0.45"/>
+<hole x="1" y="67.314" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">8</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">E</text>
+<wire x1="0.715" y1="18.42" x2="0.715" y2="18.82" width="0.08" layer="25"/>
+<wire x1="0.815" y1="18.53" x2="0.715" y2="18.42" width="0.08" layer="25"/>
+</package>
+<package name="PRONG-09">
+<wire x1="0" y1="-1" x2="0" y2="64.412" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="64.412" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="64.412" x2="2.075" y2="64.412" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="60.612" drill="1.1"/>
+<wire x1="0" y1="64.412" x2="-1" y2="66.112" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="64.412" x2="3" y2="66.112" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="66.112" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="66.112" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="64.462" drill="0.41"/>
+<hole x="2.16" y="64.462" drill="0.41"/>
+<hole x="0.255" y="65.077" drill="0.45"/>
+<hole x="1.745" y="65.077" drill="0.45"/>
+<hole x="1" y="65.297" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">9</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">F</text>
+<wire x1="0.715" y1="18.42" x2="0.715" y2="18.82" width="0.08" layer="25"/>
+<wire x1="0.815" y1="18.53" x2="0.715" y2="18.42" width="0.08" layer="25"/>
+</package>
+<package name="PRONG-10">
+<wire x1="0" y1="-1" x2="0" y2="62.395" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="62.395" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="62.395" x2="2.075" y2="62.395" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="58.595" drill="1.1"/>
+<wire x1="0" y1="62.395" x2="-1" y2="64.095" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="62.395" x2="3" y2="64.095" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="64.095" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="64.095" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="62.445" drill="0.41"/>
+<hole x="2.16" y="62.445" drill="0.41"/>
+<hole x="0.255" y="63.06" drill="0.45"/>
+<hole x="1.745" y="63.06" drill="0.45"/>
+<hole x="1" y="63.28" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">10</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">F</text>
+<wire x1="0.625" y1="17.65" x2="0.625" y2="18.15" width="0.08" layer="25"/>
+<wire x1="0.425" y1="17.6" x2="0.425" y2="18.1" width="0.08" layer="25"/>
+<wire x1="0.345" y1="17.915" x2="0.715" y2="18.045" width="0.08" layer="25"/>
+<wire x1="0.345" y1="17.705" x2="0.715" y2="17.835" width="0.08" layer="25"/>
+<wire x1="0.715" y1="18.42" x2="0.715" y2="18.82" width="0.08" layer="25"/>
+<wire x1="0.815" y1="18.53" x2="0.715" y2="18.42" width="0.08" layer="25"/>
+</package>
+<package name="PRONG-11">
+<wire x1="0" y1="-1" x2="0" y2="60.378" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="60.378" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="60.378" x2="2.075" y2="60.378" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="56.578" drill="1.1"/>
+<wire x1="0" y1="60.378" x2="-1" y2="62.078" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="60.378" x2="3" y2="62.078" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="62.078" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="62.078" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="60.428" drill="0.41"/>
+<hole x="2.16" y="60.428" drill="0.41"/>
+<hole x="0.255" y="61.043" drill="0.45"/>
+<hole x="1.745" y="61.043" drill="0.45"/>
+<hole x="1" y="61.263" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">11</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">G</text>
+<wire x1="0.715" y1="18.42" x2="0.715" y2="18.82" width="0.08" layer="25"/>
+<wire x1="0.815" y1="18.53" x2="0.715" y2="18.42" width="0.08" layer="25"/>
+</package>
+<package name="PRONG-12">
+<wire x1="0" y1="-1" x2="0" y2="58.36" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="58.36" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="58.36" x2="2.075" y2="58.36" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="54.56" drill="1.1"/>
+<wire x1="0" y1="58.36" x2="-1" y2="60.06" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="58.36" x2="3" y2="60.06" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="60.06" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="60.06" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="58.41" drill="0.41"/>
+<hole x="2.16" y="58.41" drill="0.41"/>
+<hole x="0.255" y="59.025" drill="0.45"/>
+<hole x="1.745" y="59.025" drill="0.45"/>
+<hole x="1" y="59.245" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">12</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">G</text>
+<wire x1="0.625" y1="17.65" x2="0.625" y2="18.15" width="0.08" layer="25"/>
+<wire x1="0.425" y1="17.6" x2="0.425" y2="18.1" width="0.08" layer="25"/>
+<wire x1="0.345" y1="17.915" x2="0.715" y2="18.045" width="0.08" layer="25"/>
+<wire x1="0.345" y1="17.705" x2="0.715" y2="17.835" width="0.08" layer="25"/>
+<wire x1="0.715" y1="18.42" x2="0.715" y2="18.82" width="0.08" layer="25"/>
+<wire x1="0.815" y1="18.53" x2="0.715" y2="18.42" width="0.08" layer="25"/>
+</package>
+<package name="PRONG-13">
+<wire x1="0" y1="-1" x2="0" y2="56.343" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="56.343" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="56.343" x2="2.075" y2="56.343" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="52.543" drill="1.1"/>
+<wire x1="0" y1="56.343" x2="-1" y2="58.043" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="56.343" x2="3" y2="58.043" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="58.043" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="58.043" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="56.393" drill="0.41"/>
+<hole x="2.16" y="56.393" drill="0.41"/>
+<hole x="0.255" y="57.008" drill="0.45"/>
+<hole x="1.745" y="57.008" drill="0.45"/>
+<hole x="1" y="57.228" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">13</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">A</text>
+<wire x1="0.715" y1="18.42" x2="0.715" y2="18.82" width="0.08" layer="25"/>
+<wire x1="0.815" y1="18.53" x2="0.715" y2="18.42" width="0.08" layer="25"/>
+</package>
+<package name="PRONG-14">
+<wire x1="0" y1="-1" x2="0" y2="54.326" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="54.326" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="54.326" x2="2.075" y2="54.326" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="50.526" drill="1.1"/>
+<wire x1="0" y1="54.326" x2="-1" y2="56.026" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="54.326" x2="3" y2="56.026" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="56.026" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="56.026" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="54.376" drill="0.41"/>
+<hole x="2.16" y="54.376" drill="0.41"/>
+<hole x="0.255" y="54.991" drill="0.45"/>
+<hole x="1.745" y="54.991" drill="0.45"/>
+<hole x="1" y="55.211" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">14</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">A</text>
+<wire x1="0.625" y1="17.65" x2="0.625" y2="18.15" width="0.08" layer="25"/>
+<wire x1="0.425" y1="17.6" x2="0.425" y2="18.1" width="0.08" layer="25"/>
+<wire x1="0.345" y1="17.915" x2="0.715" y2="18.045" width="0.08" layer="25"/>
+<wire x1="0.345" y1="17.705" x2="0.715" y2="17.835" width="0.08" layer="25"/>
+<wire x1="0.715" y1="18.42" x2="0.715" y2="18.82" width="0.08" layer="25"/>
+<wire x1="0.815" y1="18.53" x2="0.715" y2="18.42" width="0.08" layer="25"/>
+</package>
+<package name="PRONG-15">
+<wire x1="0" y1="-1" x2="0" y2="52.309" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="52.309" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="52.309" x2="2.075" y2="52.309" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="48.509" drill="1.1"/>
+<wire x1="0" y1="52.309" x2="-1" y2="54.009" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="52.309" x2="3" y2="54.009" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="54.009" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="54.009" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="52.359" drill="0.41"/>
+<hole x="2.16" y="52.359" drill="0.41"/>
+<hole x="0.255" y="52.974" drill="0.45"/>
+<hole x="1.745" y="52.974" drill="0.45"/>
+<hole x="1" y="53.194" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">15</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">B</text>
+<wire x1="0.715" y1="18.42" x2="0.715" y2="18.82" width="0.08" layer="25"/>
+<wire x1="0.815" y1="18.53" x2="0.715" y2="18.42" width="0.08" layer="25"/>
+</package>
+<package name="PRONG-16">
+<wire x1="0" y1="-1" x2="0" y2="80.55" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="80.55" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="80.55" x2="2.075" y2="80.55" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="76.75" drill="1.1"/>
+<wire x1="0" y1="80.55" x2="-1" y2="82.25" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="80.55" x2="3" y2="82.25" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="82.25" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="82.25" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="80.6" drill="0.41"/>
+<hole x="2.16" y="80.6" drill="0.41"/>
+<hole x="0.255" y="81.215" drill="0.45"/>
+<hole x="1.745" y="81.215" drill="0.45"/>
+<hole x="1" y="81.435" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">16</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">C</text>
+<wire x1="0.585" y1="18.83" x2="0.825" y2="18.83" width="0.08" layer="25"/>
+<wire x1="0.825" y1="18.83" x2="0.605" y2="18.56" width="0.08" layer="25"/>
+<wire x1="0.605" y1="18.56" x2="0.815" y2="18.48" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-17">
+<wire x1="0" y1="-1" x2="0" y2="78.533" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="78.533" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="78.533" x2="2.075" y2="78.533" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="74.733" drill="1.1"/>
+<wire x1="0" y1="78.533" x2="-1" y2="80.233" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="78.533" x2="3" y2="80.233" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="80.233" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="80.233" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="78.583" drill="0.41"/>
+<hole x="2.16" y="78.583" drill="0.41"/>
+<hole x="0.255" y="79.198" drill="0.45"/>
+<hole x="1.745" y="79.198" drill="0.45"/>
+<hole x="1" y="79.418" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">17</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">C</text>
+<wire x1="0.625" y1="17.65" x2="0.625" y2="18.15" width="0.08" layer="25"/>
+<wire x1="0.425" y1="17.6" x2="0.425" y2="18.1" width="0.08" layer="25"/>
+<wire x1="0.345" y1="17.915" x2="0.715" y2="18.045" width="0.08" layer="25"/>
+<wire x1="0.345" y1="17.705" x2="0.715" y2="17.835" width="0.08" layer="25"/>
+<wire x1="0.585" y1="18.83" x2="0.825" y2="18.83" width="0.08" layer="25"/>
+<wire x1="0.825" y1="18.83" x2="0.605" y2="18.56" width="0.08" layer="25"/>
+<wire x1="0.605" y1="18.56" x2="0.815" y2="18.48" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-18">
+<wire x1="0" y1="-1" x2="0" y2="76.516" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="76.516" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="76.516" x2="2.075" y2="76.516" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="72.716" drill="1.1"/>
+<wire x1="0" y1="76.516" x2="-1" y2="78.216" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="76.516" x2="3" y2="78.216" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="78.216" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="78.216" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="76.566" drill="0.41"/>
+<hole x="2.16" y="76.566" drill="0.41"/>
+<hole x="0.255" y="77.181" drill="0.45"/>
+<hole x="1.745" y="77.181" drill="0.45"/>
+<hole x="1" y="77.401" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">18</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">D</text>
+<wire x1="0.585" y1="18.83" x2="0.825" y2="18.83" width="0.08" layer="25"/>
+<wire x1="0.825" y1="18.83" x2="0.605" y2="18.56" width="0.08" layer="25"/>
+<wire x1="0.605" y1="18.56" x2="0.815" y2="18.48" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-19">
+<wire x1="0" y1="-1" x2="0" y2="74.498" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="74.498" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="74.498" x2="2.075" y2="74.498" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="70.698" drill="1.1"/>
+<wire x1="0" y1="74.498" x2="-1" y2="76.198" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="74.498" x2="3" y2="76.198" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="76.198" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="76.198" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="74.548" drill="0.41"/>
+<hole x="2.16" y="74.548" drill="0.41"/>
+<hole x="0.255" y="75.163" drill="0.45"/>
+<hole x="1.745" y="75.163" drill="0.45"/>
+<hole x="1" y="75.383" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">19</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">D</text>
+<wire x1="0.625" y1="17.65" x2="0.625" y2="18.15" width="0.08" layer="25"/>
+<wire x1="0.425" y1="17.6" x2="0.425" y2="18.1" width="0.08" layer="25"/>
+<wire x1="0.345" y1="17.915" x2="0.715" y2="18.045" width="0.08" layer="25"/>
+<wire x1="0.345" y1="17.705" x2="0.715" y2="17.835" width="0.08" layer="25"/>
+<wire x1="0.585" y1="18.83" x2="0.825" y2="18.83" width="0.08" layer="25"/>
+<wire x1="0.825" y1="18.83" x2="0.605" y2="18.56" width="0.08" layer="25"/>
+<wire x1="0.605" y1="18.56" x2="0.815" y2="18.48" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-20">
+<wire x1="0" y1="-1" x2="0" y2="72.481" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="72.481" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="72.481" x2="2.075" y2="72.481" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="68.681" drill="1.1"/>
+<wire x1="0" y1="72.481" x2="-1" y2="74.181" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="72.481" x2="3" y2="74.181" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="74.181" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="74.181" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="72.531" drill="0.41"/>
+<hole x="2.16" y="72.531" drill="0.41"/>
+<hole x="0.255" y="73.146" drill="0.45"/>
+<hole x="1.745" y="73.146" drill="0.45"/>
+<hole x="1" y="73.366" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">20</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">E</text>
+<wire x1="0.585" y1="18.83" x2="0.825" y2="18.83" width="0.08" layer="25"/>
+<wire x1="0.825" y1="18.83" x2="0.605" y2="18.56" width="0.08" layer="25"/>
+<wire x1="0.605" y1="18.56" x2="0.815" y2="18.48" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-21">
+<wire x1="0" y1="-1" x2="0" y2="70.464" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="70.464" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="70.464" x2="2.075" y2="70.464" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="66.664" drill="1.1"/>
+<wire x1="0" y1="70.464" x2="-1" y2="72.164" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="70.464" x2="3" y2="72.164" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="72.164" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="72.164" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="70.514" drill="0.41"/>
+<hole x="2.16" y="70.514" drill="0.41"/>
+<hole x="0.255" y="71.129" drill="0.45"/>
+<hole x="1.745" y="71.129" drill="0.45"/>
+<hole x="1" y="71.349" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">21</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">F</text>
+<wire x1="0.585" y1="18.83" x2="0.825" y2="18.83" width="0.08" layer="25"/>
+<wire x1="0.825" y1="18.83" x2="0.605" y2="18.56" width="0.08" layer="25"/>
+<wire x1="0.605" y1="18.56" x2="0.815" y2="18.48" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-22">
+<wire x1="0" y1="-1" x2="0" y2="69.963" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="69.963" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="69.963" x2="2.075" y2="69.963" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="66.163" drill="1.1"/>
+<wire x1="0" y1="69.963" x2="-1" y2="71.663" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="69.963" x2="3" y2="71.663" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="71.663" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="71.663" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="70.013" drill="0.41"/>
+<hole x="2.16" y="70.013" drill="0.41"/>
+<hole x="0.255" y="70.628" drill="0.45"/>
+<hole x="1.745" y="70.628" drill="0.45"/>
+<hole x="1" y="70.848" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="17.375" x2="1.5" y2="17.375" width="0.25" layer="25"/>
+<wire x1="0.5" y1="20.625" x2="1.5" y2="20.625" width="0.25" layer="25"/>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">22</text>
+<text x="1.3" y="19.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">F</text>
+<wire x1="0.625" y1="19.15" x2="0.625" y2="19.65" width="0.08" layer="25"/>
+<wire x1="0.425" y1="19.1" x2="0.425" y2="19.6" width="0.08" layer="25"/>
+<wire x1="0.345" y1="19.415" x2="0.715" y2="19.545" width="0.08" layer="25"/>
+<wire x1="0.345" y1="19.205" x2="0.715" y2="19.335" width="0.08" layer="25"/>
+<wire x1="0.585" y1="20.33" x2="0.825" y2="20.33" width="0.08" layer="25"/>
+<wire x1="0.825" y1="20.33" x2="0.605" y2="20.06" width="0.08" layer="25"/>
+<wire x1="0.605" y1="20.06" x2="0.815" y2="19.98" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-23">
+<wire x1="0" y1="-1" x2="0" y2="67.946" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="67.946" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="67.946" x2="2.075" y2="67.946" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="64.146" drill="1.1"/>
+<wire x1="0" y1="67.946" x2="-1" y2="69.646" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="67.946" x2="3" y2="69.646" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="69.646" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="69.646" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="67.996" drill="0.41"/>
+<hole x="2.16" y="67.996" drill="0.41"/>
+<hole x="0.255" y="68.611" drill="0.45"/>
+<hole x="1.745" y="68.611" drill="0.45"/>
+<hole x="1" y="68.831" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="17.375" x2="1.5" y2="17.375" width="0.25" layer="25"/>
+<wire x1="0.5" y1="20.625" x2="1.5" y2="20.625" width="0.25" layer="25"/>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">23</text>
+<text x="1.3" y="19.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">G</text>
+<wire x1="0.585" y1="20.33" x2="0.825" y2="20.33" width="0.08" layer="25"/>
+<wire x1="0.825" y1="20.33" x2="0.605" y2="20.06" width="0.08" layer="25"/>
+<wire x1="0.605" y1="20.06" x2="0.815" y2="19.98" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-24">
+<wire x1="0" y1="-1" x2="0" y2="65.928" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="65.928" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="65.928" x2="2.075" y2="65.928" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="62.128" drill="1.1"/>
+<wire x1="0" y1="65.928" x2="-1" y2="67.628" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="65.928" x2="3" y2="67.628" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="67.628" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="67.628" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="65.978" drill="0.41"/>
+<hole x="2.16" y="65.978" drill="0.41"/>
+<hole x="0.255" y="66.593" drill="0.45"/>
+<hole x="1.745" y="66.593" drill="0.45"/>
+<hole x="1" y="66.813" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="17.375" x2="1.5" y2="17.375" width="0.25" layer="25"/>
+<wire x1="0.5" y1="20.625" x2="1.5" y2="20.625" width="0.25" layer="25"/>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">24</text>
+<text x="1.3" y="19.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">G</text>
+<wire x1="0.625" y1="19.15" x2="0.625" y2="19.65" width="0.08" layer="25"/>
+<wire x1="0.425" y1="19.1" x2="0.425" y2="19.6" width="0.08" layer="25"/>
+<wire x1="0.345" y1="19.415" x2="0.715" y2="19.545" width="0.08" layer="25"/>
+<wire x1="0.345" y1="19.205" x2="0.715" y2="19.335" width="0.08" layer="25"/>
+<wire x1="0.585" y1="20.33" x2="0.825" y2="20.33" width="0.08" layer="25"/>
+<wire x1="0.825" y1="20.33" x2="0.605" y2="20.06" width="0.08" layer="25"/>
+<wire x1="0.605" y1="20.06" x2="0.815" y2="19.98" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-25">
+<wire x1="0" y1="-1" x2="0" y2="63.911" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="63.911" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="63.911" x2="2.075" y2="63.911" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="60.111" drill="1.1"/>
+<wire x1="0" y1="63.911" x2="-1" y2="65.611" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="63.911" x2="3" y2="65.611" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="65.611" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="65.611" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="63.961" drill="0.41"/>
+<hole x="2.16" y="63.961" drill="0.41"/>
+<hole x="0.255" y="64.576" drill="0.45"/>
+<hole x="1.745" y="64.576" drill="0.45"/>
+<hole x="1" y="64.796" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="17.375" x2="1.5" y2="17.375" width="0.25" layer="25"/>
+<wire x1="0.5" y1="20.625" x2="1.5" y2="20.625" width="0.25" layer="25"/>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">25</text>
+<text x="1.3" y="19.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">A</text>
+<wire x1="0.585" y1="20.33" x2="0.825" y2="20.33" width="0.08" layer="25"/>
+<wire x1="0.825" y1="20.33" x2="0.605" y2="20.06" width="0.08" layer="25"/>
+<wire x1="0.605" y1="20.06" x2="0.815" y2="19.98" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-26">
+<wire x1="0" y1="-1" x2="0" y2="61.894" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="61.894" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="61.894" x2="2.075" y2="61.894" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="58.094" drill="1.1"/>
+<wire x1="0" y1="61.894" x2="-1" y2="63.594" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="61.894" x2="3" y2="63.594" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="63.594" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="63.594" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="61.944" drill="0.41"/>
+<hole x="2.16" y="61.944" drill="0.41"/>
+<hole x="0.255" y="62.559" drill="0.45"/>
+<hole x="1.745" y="62.559" drill="0.45"/>
+<hole x="1" y="62.779" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="17.375" x2="1.5" y2="17.375" width="0.25" layer="25"/>
+<wire x1="0.5" y1="20.625" x2="1.5" y2="20.625" width="0.25" layer="25"/>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">26</text>
+<text x="1.3" y="19.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">A</text>
+<wire x1="0.625" y1="19.15" x2="0.625" y2="19.65" width="0.08" layer="25"/>
+<wire x1="0.425" y1="19.1" x2="0.425" y2="19.6" width="0.08" layer="25"/>
+<wire x1="0.345" y1="19.415" x2="0.715" y2="19.545" width="0.08" layer="25"/>
+<wire x1="0.345" y1="19.205" x2="0.715" y2="19.335" width="0.08" layer="25"/>
+<wire x1="0.585" y1="20.33" x2="0.825" y2="20.33" width="0.08" layer="25"/>
+<wire x1="0.825" y1="20.33" x2="0.605" y2="20.06" width="0.08" layer="25"/>
+<wire x1="0.605" y1="20.06" x2="0.815" y2="19.98" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-27">
+<wire x1="0" y1="-1" x2="0" y2="59.877" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="59.877" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="59.877" x2="2.075" y2="59.877" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="56.077" drill="1.1"/>
+<wire x1="0" y1="59.877" x2="-1" y2="61.577" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="59.877" x2="3" y2="61.577" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="61.577" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="61.577" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="59.927" drill="0.41"/>
+<hole x="2.16" y="59.927" drill="0.41"/>
+<hole x="0.255" y="60.542" drill="0.45"/>
+<hole x="1.745" y="60.542" drill="0.45"/>
+<hole x="1" y="60.762" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="17.375" x2="1.5" y2="17.375" width="0.25" layer="25"/>
+<wire x1="0.5" y1="20.625" x2="1.5" y2="20.625" width="0.25" layer="25"/>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">27</text>
+<text x="1.3" y="19.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">B</text>
+<wire x1="0.585" y1="20.33" x2="0.825" y2="20.33" width="0.08" layer="25"/>
+<wire x1="0.825" y1="20.33" x2="0.605" y2="20.06" width="0.08" layer="25"/>
+<wire x1="0.605" y1="20.06" x2="0.815" y2="19.98" width="0.08" layer="25" curve="191"/>
+</package>
+<package name="PRONG-01">
+<wire x1="0" y1="-1" x2="0" y2="80.55" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="80.55" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="80.55" x2="2.075" y2="80.55" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="76.75" drill="1.1"/>
+<wire x1="0" y1="80.55" x2="-1" y2="82.25" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="80.55" x2="3" y2="82.25" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="82.25" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="82.25" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="80.6" drill="0.41"/>
+<hole x="2.16" y="80.6" drill="0.41"/>
+<hole x="0.255" y="81.215" drill="0.45"/>
+<hole x="1.745" y="81.215" drill="0.45"/>
+<hole x="1" y="81.435" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">1</text>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">C</text>
+</package>
+<package name="PRONG-28">
+<wire x1="0" y1="-1" x2="0" y2="57.859" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="57.859" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="57.859" x2="2.075" y2="57.859" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="54.059" drill="1.1"/>
+<wire x1="0" y1="57.859" x2="-1" y2="59.559" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="57.859" x2="3" y2="59.559" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="59.559" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="59.559" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="57.909" drill="0.41"/>
+<hole x="2.16" y="57.909" drill="0.41"/>
+<hole x="0.255" y="58.524" drill="0.45"/>
+<hole x="1.745" y="58.524" drill="0.45"/>
+<hole x="1" y="58.744" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="17.375" x2="1.5" y2="17.375" width="0.25" layer="25"/>
+<wire x1="0.5" y1="20.625" x2="1.5" y2="20.625" width="0.25" layer="25"/>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">28</text>
+<text x="1.3" y="19.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">C</text>
+<wire x1="0.605" y1="20.06" x2="0.815" y2="19.98" width="0.08" layer="25" curve="191"/>
+<wire x1="0.665" y1="20.11" x2="0.615" y2="20.07" width="0.08" layer="25"/>
+<wire x1="0.615" y1="20.16" x2="0.665" y2="20.11" width="0.08" layer="25"/>
+<wire x1="0.675" y1="20.11" x2="0.705" y2="20.11" width="0.08" layer="25"/>
+<wire x1="0.605" y1="20.17" x2="0.815" y2="20.25" width="0.08" layer="25" curve="-191"/>
+</package>
+<package name="PRONG-29">
+<wire x1="0" y1="-1" x2="0" y2="55.842" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="55.842" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="55.842" x2="2.075" y2="55.842" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="52.042" drill="1.1"/>
+<wire x1="0" y1="55.842" x2="-1" y2="57.542" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="55.842" x2="3" y2="57.542" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="57.542" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="57.542" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="55.892" drill="0.41"/>
+<hole x="2.16" y="55.892" drill="0.41"/>
+<hole x="0.255" y="56.507" drill="0.45"/>
+<hole x="1.745" y="56.507" drill="0.45"/>
+<hole x="1" y="56.727" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="17.375" x2="1.5" y2="17.375" width="0.25" layer="25"/>
+<wire x1="0.5" y1="20.625" x2="1.5" y2="20.625" width="0.25" layer="25"/>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">29</text>
+<text x="1.3" y="19.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">D</text>
+<wire x1="0.605" y1="20.06" x2="0.815" y2="19.98" width="0.08" layer="25" curve="191"/>
+<wire x1="0.665" y1="20.11" x2="0.615" y2="20.07" width="0.08" layer="25"/>
+<wire x1="0.615" y1="20.16" x2="0.665" y2="20.11" width="0.08" layer="25"/>
+<wire x1="0.675" y1="20.11" x2="0.705" y2="20.11" width="0.08" layer="25"/>
+<wire x1="0.605" y1="20.17" x2="0.815" y2="20.25" width="0.08" layer="25" curve="-191"/>
+</package>
+<package name="PRONG-30">
+<wire x1="0" y1="-1" x2="0" y2="53.825" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="53.825" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="53.825" x2="2.075" y2="53.825" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="50.025" drill="1.1"/>
+<wire x1="0" y1="53.825" x2="-1" y2="55.525" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="53.825" x2="3" y2="55.525" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="55.525" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="55.525" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="53.875" drill="0.41"/>
+<hole x="2.16" y="53.875" drill="0.41"/>
+<hole x="0.255" y="54.49" drill="0.45"/>
+<hole x="1.745" y="54.49" drill="0.45"/>
+<hole x="1" y="54.71" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="17.375" x2="1.5" y2="17.375" width="0.25" layer="25"/>
+<wire x1="0.5" y1="20.625" x2="1.5" y2="20.625" width="0.25" layer="25"/>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">30</text>
+<text x="1.3" y="19.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">E</text>
+<wire x1="0.605" y1="20.06" x2="0.815" y2="19.98" width="0.08" layer="25" curve="191"/>
+<wire x1="0.665" y1="20.11" x2="0.615" y2="20.07" width="0.08" layer="25"/>
+<wire x1="0.615" y1="20.16" x2="0.665" y2="20.11" width="0.08" layer="25"/>
+<wire x1="0.675" y1="20.11" x2="0.705" y2="20.11" width="0.08" layer="25"/>
+<wire x1="0.605" y1="20.17" x2="0.815" y2="20.25" width="0.08" layer="25" curve="-191"/>
+</package>
+<package name="PRONG-02">
+<wire x1="0" y1="-1" x2="0" y2="78.533" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="78.533" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="78.533" x2="2.075" y2="78.533" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="74.733" drill="1.1"/>
+<wire x1="0" y1="78.533" x2="-1" y2="80.233" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="78.533" x2="3" y2="80.233" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="80.233" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="80.233" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="78.583" drill="0.41"/>
+<hole x="2.16" y="78.583" drill="0.41"/>
+<hole x="0.255" y="79.198" drill="0.45"/>
+<hole x="1.745" y="79.198" drill="0.45"/>
+<hole x="1" y="79.418" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">2</text>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">D</text>
+</package>
+<package name="PRONG-03">
+<wire x1="0" y1="-1" x2="0" y2="76.516" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="76.516" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="76.516" x2="2.075" y2="76.516" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="72.716" drill="1.1"/>
+<wire x1="0" y1="76.516" x2="-1" y2="78.216" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="76.516" x2="3" y2="78.216" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="78.216" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="78.216" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="76.566" drill="0.41"/>
+<hole x="2.16" y="76.566" drill="0.41"/>
+<hole x="0.255" y="77.181" drill="0.45"/>
+<hole x="1.745" y="77.181" drill="0.45"/>
+<hole x="1" y="77.401" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">3</text>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">G</text>
+</package>
+<package name="PRONG-04">
+<wire x1="0" y1="-1" x2="0" y2="74.498" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="74.498" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="74.498" x2="2.075" y2="74.498" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="70.698" drill="1.1"/>
+<wire x1="0" y1="74.498" x2="-1" y2="76.198" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="74.498" x2="3" y2="76.198" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="76.198" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="76.198" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="74.548" drill="0.41"/>
+<hole x="2.16" y="74.548" drill="0.41"/>
+<hole x="0.255" y="75.163" drill="0.45"/>
+<hole x="1.745" y="75.163" drill="0.45"/>
+<hole x="1" y="75.383" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">4</text>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">A</text>
+</package>
+<package name="PRONG-05">
+<wire x1="0" y1="-1" x2="0" y2="72.481" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="72.481" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="72.481" x2="2.075" y2="72.481" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="68.681" drill="1.1"/>
+<wire x1="0" y1="72.481" x2="-1" y2="74.181" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="72.481" x2="3" y2="74.181" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="74.181" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="74.181" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="72.531" drill="0.41"/>
+<hole x="2.16" y="72.531" drill="0.41"/>
+<hole x="0.255" y="73.146" drill="0.45"/>
+<hole x="1.745" y="73.146" drill="0.45"/>
+<hole x="1" y="73.366" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">5</text>
+<text x="1" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">B</text>
+</package>
+<package name="PRONG-06">
+<wire x1="0" y1="-1" x2="0" y2="70.464" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="70.464" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="70.464" x2="2.075" y2="70.464" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="66.664" drill="1.1"/>
+<wire x1="0" y1="70.464" x2="-1" y2="72.164" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="70.464" x2="3" y2="72.164" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="72.164" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="72.164" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="70.514" drill="0.41"/>
+<hole x="2.16" y="70.514" drill="0.41"/>
+<hole x="0.255" y="71.129" drill="0.45"/>
+<hole x="1.745" y="71.129" drill="0.45"/>
+<hole x="1" y="71.349" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">6</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">C</text>
+<wire x1="0.715" y1="18.42" x2="0.715" y2="18.82" width="0.08" layer="25"/>
+<wire x1="0.815" y1="18.53" x2="0.715" y2="18.42" width="0.08" layer="25"/>
+</package>
+<package name="PRONG-07">
+<wire x1="0" y1="-1" x2="0" y2="68.447" width="0" layer="20"/>
+<wire x1="2" y1="-1" x2="2" y2="68.447" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="2" y2="0" width="0.1" layer="25"/>
+<wire x1="0.4" y1="0" x2="1.6" y2="0" width="0" layer="20" curve="180"/>
+<wire x1="0.4" y1="0" x2="0.6" y2="0.35" width="0" layer="20" curve="-15"/>
+<wire x1="0.6" y1="0.35" x2="1.4" y2="0.35" width="0" layer="20" curve="-80"/>
+<wire x1="1.6" y1="0" x2="1.4" y2="0.35" width="0" layer="20" curve="15"/>
+<wire x1="-0.075" y1="68.447" x2="2.075" y2="68.447" width="0.2" layer="25" curve="-145"/>
+<hole x="1" y="64.647" drill="1.1"/>
+<wire x1="0" y1="68.447" x2="-1" y2="70.147" width="0" layer="20" curve="30"/>
+<wire x1="2" y1="68.447" x2="3" y2="70.147" width="0" layer="20" curve="-30"/>
+<wire x1="-1" y1="70.147" x2="-1" y2="84" width="0" layer="20"/>
+<wire x1="3" y1="70.147" x2="3" y2="84" width="0" layer="20"/>
+<hole x="-0.16" y="68.497" drill="0.41"/>
+<hole x="2.16" y="68.497" drill="0.41"/>
+<hole x="0.255" y="69.112" drill="0.45"/>
+<hole x="1.745" y="69.112" drill="0.45"/>
+<hole x="1" y="69.332" drill="0.41"/>
+<wire x1="0" y1="-1" x2="-1" y2="-2" width="0" layer="20" curve="-90"/>
+<wire x1="2" y1="-1" x2="3" y2="-2" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="-2" x2="3.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="-2" x2="-1.5" y2="-2" width="0" layer="20"/>
+<wire x1="-1" y1="84" x2="-1.5" y2="84.5" width="0" layer="20" curve="90"/>
+<wire x1="3" y1="84" x2="3.5" y2="84.5" width="0" layer="20" curve="-90"/>
+<wire x1="0.5" y1="15.875" x2="1.5" y2="15.875" width="0.25" layer="25"/>
+<wire x1="0.5" y1="19.125" x2="1.5" y2="19.125" width="0.25" layer="25"/>
+<text x="1" y="16.775" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">7</text>
+<text x="1.3" y="18.275" size="1.016" layer="25" font="vector" ratio="12" rot="SR180" align="center">D</text>
+<wire x1="0.715" y1="18.42" x2="0.715" y2="18.82" width="0.08" layer="25"/>
+<wire x1="0.815" y1="18.53" x2="0.715" y2="18.42" width="0.08" layer="25"/>
+</package>
+</packages>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<designrules name="default">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
+<param name="mdViaViaSameLayer" value="6mil"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="40mil"/>
+<param name="mdDrill" value="6mil"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="0.35mm"/>
+<param name="msMicroVia" value="9.99mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkAngle" value="0"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="a"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="U$10" library="music-box-parts" package="PRONG-08" value="PRONG-08" x="41.5" y="8" smashed="yes"/>
+<element name="U$11" library="music-box-parts" package="PRONG-09" value="PRONG-09" x="46.5" y="8" smashed="yes"/>
+<element name="U$12" library="music-box-parts" package="PRONG-10" value="PRONG-10" x="51.5" y="8" smashed="yes"/>
+<element name="U$13" library="music-box-parts" package="PRONG-11" value="PRONG-11" x="56.5" y="8" smashed="yes"/>
+<element name="U$14" library="music-box-parts" package="PRONG-12" value="PRONG-12" x="61.5" y="8" smashed="yes"/>
+<element name="U$15" library="music-box-parts" package="PRONG-13" value="PRONG-13" x="66.5" y="8" smashed="yes"/>
+<element name="U$16" library="music-box-parts" package="PRONG-14" value="PRONG-14" x="71.5" y="8" smashed="yes"/>
+<element name="U$17" library="music-box-parts" package="PRONG-15" value="PRONG-15" x="76.5" y="8" smashed="yes"/>
+<element name="U$18" library="music-box-parts" package="PRONG-16" value="PRONG-16" x="81.5" y="8" smashed="yes"/>
+<element name="U$19" library="music-box-parts" package="PRONG-17" value="PRONG-17" x="86.5" y="8" smashed="yes"/>
+<element name="U$20" library="music-box-parts" package="PRONG-18" value="PRONG-18" x="91.5" y="8" smashed="yes"/>
+<element name="U$21" library="music-box-parts" package="PRONG-19" value="PRONG-19" x="96.5" y="8" smashed="yes"/>
+<element name="U$22" library="music-box-parts" package="PRONG-20" value="PRONG-20" x="101.5" y="8" smashed="yes"/>
+<element name="U$23" library="music-box-parts" package="PRONG-21" value="PRONG-21" x="106.5" y="8" smashed="yes"/>
+<element name="U$24" library="music-box-parts" package="PRONG-22" value="PRONG-22" x="111.5" y="8" smashed="yes"/>
+<element name="U$25" library="music-box-parts" package="PRONG-23" value="PRONG-23" x="116.5" y="8" smashed="yes"/>
+<element name="U$26" library="music-box-parts" package="PRONG-24" value="PRONG-24" x="121.5" y="8" smashed="yes"/>
+<element name="U$27" library="music-box-parts" package="PRONG-25" value="PRONG-25" x="126.5" y="8" smashed="yes"/>
+<element name="U$28" library="music-box-parts" package="PRONG-26" value="PRONG-26" x="131.5" y="8" smashed="yes"/>
+<element name="U$29" library="music-box-parts" package="PRONG-27" value="PRONG-27" x="136.5" y="8" smashed="yes"/>
+<element name="U$3" library="music-box-parts" package="PRONG-01" value="PRONG-01" x="6.5" y="8" smashed="yes"/>
+<element name="U$30" library="music-box-parts" package="PRONG-28" value="PRONG-28" x="141.5" y="8" smashed="yes"/>
+<element name="U$31" library="music-box-parts" package="PRONG-29" value="PRONG-29" x="146.5" y="8" smashed="yes"/>
+<element name="U$32" library="music-box-parts" package="PRONG-30" value="PRONG-30" x="151.5" y="8" smashed="yes"/>
+<element name="U$4" library="music-box-parts" package="PRONG-02" value="PRONG-02" x="11.5" y="8" smashed="yes"/>
+<element name="U$5" library="music-box-parts" package="PRONG-03" value="PRONG-03" x="16.5" y="8" smashed="yes"/>
+<element name="U$6" library="music-box-parts" package="PRONG-04" value="PRONG-04" x="21.5" y="8" smashed="yes"/>
+<element name="U$7" library="music-box-parts" package="PRONG-05" value="PRONG-05" x="26.5" y="8" smashed="yes"/>
+<element name="U$8" library="music-box-parts" package="PRONG-06" value="PRONG-06" x="31.5" y="8" smashed="yes"/>
+<element name="U$9" library="music-box-parts" package="PRONG-07" value="PRONG-07" x="36.5" y="8" smashed="yes"/>
+</elements>
+<signals>
+</signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
+</board>
+</drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
+</eagle>
