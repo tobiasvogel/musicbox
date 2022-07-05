@@ -1,20 +1,44 @@
 
-Select MIDI Out Device: <select id=webMidiSelect></select>
+<fieldset>
+  <legend>MIDI Out Device</legend>
+  <select id=webMidiSelect></select>
+</fieldset>
 
-<form>
-<table></table>
-</form>
+<fieldset>
+  <legend>Select servo order</legend>
+  <div>
+    <input type=radio id=straightOrder name=servoOrder value=straight onchange='changeServoOrder(this);'>
+    <label for="straightOrder">Straight</label>
+  </div>
+  <div>
+    <input type=radio id=wrappedOrder name=servoOrder value=wrapped onchange='changeServoOrder(this);'>
+    <label for="wrappedOrder">Wrapped</label>
+  </div>
+</fieldset>
 
-<button onclick='send(1);' >Send all</button>
+<fieldset>
+  <legend>Offsets</legend>
+  <form>
+  <table></table>
+  </form>
 
-<br><br><br><textarea style='width:800px'></textarea><button onclick='load();' >Load</button>
+  <button onclick='send(1);' >Send all</button>
+</fieldset>
 
+<fieldset>
+  <legend>Values</legend>
+  <textarea style='width:800px'></textarea><button onclick='load();'>Load</button>
 
 <div id=sendtest></div>
-<div id=cOffset style='float:left;'><pre>s8 offset[]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};</pre></div>
-<button onclick='copy_cOffset();'>Copy</button>
+</fieldset>
 
-<div id=note style='float:none;clear:both;'><small>Note: you can paste offset-strings directly onto this page.</small></div>
+<fieldset>
+  <legend>Source code</legend>
+  <div id=cOffset style='float:left;'><pre>s8 offset[]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};</pre></div>
+  <button onclick='copy_cOffset();'>Copy</button>
+</fieldset>
+
+<div id=note style='float:none;clear:both;'><small>Note: you can paste offsets directly onto this page.</small></div>
 
 <script>
 noteLookup = [ 
@@ -50,12 +74,23 @@ noteLookup = [
   88
 ]
 
+if (window.location.search.substring(1) == 'wrapped') {
+  document.getElementById('straightOrder').checked = false;
+  document.getElementById('wrappedOrder').checked = true;
+} else {
+  document.getElementById('straightOrder').checked = true;
+  document.getElementById('wrappedOrder').checked = false;
+}
 
 s="";
 for (var i=1;i<16;i++){
   s+="<tr>"
   s+="<td>"+i+"</td><td><input type=range id=num_"+i+" value=0 min=-64 max=63 oninput='calib(this,"+i+")'></td>"
+if (document.getElementById('straightOrder').checked==true) {
   s+="<td>"+(i+15)+"</td><td><input type=range id=num_"+(i+15)+" value=0 min=-64 max=63 oninput='calib(this,"+(i+15)+")'></td>"
+} else {
+  s+="<td>"+(31-i)+"</td><td><input type=range id=num_"+(31-i)+" value=0 min=-64 max=63 oninput='calib(this,"+(31-i)+")'></td>"
+}
   s+="</tr>"
 }
 document.querySelector('table').innerHTML=s;
@@ -118,6 +153,9 @@ function paste_cOffset(clipVal) {
     tex.value=("["+result+"]");
     load();
   }
+}
+function changeServoOrder(obj) {
+  window.location.search=obj.value;
 }
 
 midiOut=null;
