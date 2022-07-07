@@ -1,8 +1,12 @@
 # MIDI Music Box
 
-Uses an SM32F103C8T6, 30 9g hobby servos and a 150W 5V power supply. 
+This is an improved version of the original musicbox project by [mitxela](https://github.com/mitxela/musicbox).
 
-Project details here: https://mitxela.com/projects/musicbox
+There are two major enhancements over the original version:
+ - PCBs (Gerber and EAGLE) for the circuits as well as most of the mechanical parts
+ - A (optional) addon-board featuring a Arduino MKR WiFi 1010 providing MIDI-file support from both microSD-cards and via WiFi (Webbrowser)
 
-Video here: https://www.youtube.com/watch?v=EuggcDJOED8
-
+In the future I will furthermore add:
+ * *BOM for all PCBs* (work-in-progress)
+ * Renderings for visualization
+ * Detailed assembly instructions
