@@ -184,10 +184,10 @@ ADJUST</text>
 CONNECTOR</text>
 <text x="6.35" y="31.75" size="1.016" layer="25" ratio="12" align="center">MIDI-PLAYER
 ADD-ON</text>
-<text x="64.77" y="56.515" size="1.016" layer="25" ratio="12" distance="39" rot="R90" align="center-left">NOTE:
+<text x="64.77" y="54.61" size="1.016" layer="25" ratio="12" distance="39" rot="R90" align="center-left">NOTE:
 </text>
-<text x="64.77" y="60.6425" size="1.016" layer="25" ratio="12" distance="39" rot="R90" align="center-left">J3-pins must be shorted
-if connector is unused</text>
+<text x="64.77" y="58.7375" size="1.016" layer="25" ratio="12" distance="39" rot="R90" align="center-left">J3-pins must be shorted (or SJ1
+closed) if connector is not used</text>
 <circle x="10" y="80" radius="2.83980625" width="0" layer="41"/>
 <circle x="50" y="60" radius="2.83980625" width="0" layer="41"/>
 <circle x="60" y="70" radius="2.83980625" width="0" layer="41"/>
@@ -202,6 +202,8 @@ if connector is unused</text>
 <text x="60.6425" y="87.63" size="0.9652" layer="26" ratio="10" rot="MR90" align="center">DIO</text>
 <text x="59.3725" y="89.8525" size="0.9652" layer="26" ratio="10" rot="MR90" align="center">+3.3V</text>
 <text x="60.6425" y="91.7575" size="0.9652" layer="26" ratio="10" rot="MR90" align="center">VAPP</text>
+<wire x1="3.8227" y1="39.751" x2="8.8773" y2="39.751" width="0.254" layer="25"/>
+<wire x1="40.6527" y1="39.751" x2="45.7073" y2="39.751" width="0.254" layer="25"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -2256,6 +2258,57 @@ Low profile connectors, straight&lt;p&gt;
 </package>
 </packages>
 </library>
+<library name="jumper" urn="urn:adsk.eagle:library:252">
+<description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SJW" urn="urn:adsk.eagle:footprint:15433/1" library_version="2">
+<description>&lt;b&gt;Solder jumper&lt;/b&gt;</description>
+<wire x1="1.905" y1="-1.524" x2="-1.905" y2="-1.524" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.524" x2="2.159" y2="1.27" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.159" y1="1.27" x2="-1.905" y2="1.524" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.159" y1="-1.27" x2="-1.905" y2="-1.524" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.905" y1="-1.524" x2="2.159" y2="-1.27" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.159" y1="-1.27" x2="2.159" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.159" y1="-1.27" x2="-2.159" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.524" x2="1.905" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.524" y1="0" x2="2.032" y2="0" width="0.1524" layer="51"/>
+<wire x1="-1.524" y1="0" x2="-2.032" y2="0" width="0.1524" layer="51"/>
+<wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="51" curve="-180"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.1524" layer="51" curve="180"/>
+<smd name="1" x="-1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
+<smd name="2" x="1.27" y="0" dx="1.27" dy="2.54" layer="1"/>
+<text x="-2.159" y="1.778" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="1" y="0" size="0.02" layer="27">&gt;VALUE</text>
+<rectangle x1="0.762" y1="-0.762" x2="1.016" y2="0.762" layer="51"/>
+<rectangle x1="1.016" y1="-0.635" x2="1.27" y2="0.635" layer="51"/>
+<rectangle x1="1.27" y1="-0.508" x2="1.397" y2="0.508" layer="51"/>
+<rectangle x1="1.397" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.016" y1="-0.762" x2="-0.762" y2="0.762" layer="51"/>
+<rectangle x1="-1.27" y1="-0.635" x2="-1.016" y2="0.635" layer="51"/>
+<rectangle x1="-1.397" y1="-0.508" x2="-1.27" y2="0.508" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.397" y2="0.254" layer="51"/>
+<rectangle x1="0.9652" y1="-0.7112" x2="1.0922" y2="-0.5842" layer="51"/>
+<rectangle x1="1.3462" y1="-0.3556" x2="1.4732" y2="-0.2286" layer="51"/>
+<rectangle x1="1.3462" y1="0.2032" x2="1.4732" y2="0.3302" layer="51"/>
+<rectangle x1="0.9652" y1="0.5842" x2="1.0922" y2="0.7112" layer="51"/>
+<rectangle x1="-1.0922" y1="-0.7112" x2="-0.9652" y2="-0.5842" layer="51"/>
+<rectangle x1="-1.4478" y1="-0.3302" x2="-1.3208" y2="-0.2032" layer="51"/>
+<rectangle x1="-1.4732" y1="0.2032" x2="-1.3462" y2="0.3302" layer="51"/>
+<rectangle x1="-1.1176" y1="0.5842" x2="-0.9906" y2="0.7112" layer="51"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="SJW" urn="urn:adsk.eagle:package:15507/1" type="box" library_version="2">
+<description>Solder jumper</description>
+<packageinstances>
+<packageinstance name="SJW"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2528,7 +2581,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="54.864" y="34.798" size="1.016" layer="25" ratio="10" rot="R270"/>
 <attribute name="POPULARITY" value="46" x="-43.18" y="-41.91" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-43.18" y="-41.91" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="56.7182" y="37.211" size="0.9144" layer="27" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="57.5818" y="33.274" size="0.9144" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="T1" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" package="TO92" package3d_urn="urn:adsk.eagle:package:28725/2" value="2N2222" x="58.42" y="59.69" smashed="yes">
 <attribute name="DIGIKEY_PART_NUMBER" value="KSP2222ABUFS-ND" x="58.42" y="59.69" size="1.778" layer="27" display="off"/>
@@ -2626,6 +2679,11 @@ design rules under a new name.</description>
 <attribute name="MOUSER_PART_NUMBER" value="855-M22-7130542" x="62.865" y="83.82" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Harwin/M22-7130542?qs=Jph8NoUxIfVEgwGbmzmPjA%3D%3D" x="62.865" y="83.82" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="65.659" y="88.265" size="1.016" layer="25" ratio="10" rot="R90" align="bottom-right"/>
+</element>
+<element name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" package="SJW" package3d_urn="urn:adsk.eagle:package:15507/1" value="No Addon" x="6.35" y="41.275" smashed="yes" rot="MR180">
+<attribute name="NAME" x="9.271" y="42.672" size="1.27" layer="26" ratio="10" rot="MR180"/>
+<attribute name="POPULARITY" value="3" x="6.35" y="41.275" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="7.35" y="41.275" size="0.02" layer="28" rot="MR180"/>
 </element>
 </elements>
 <signals>
@@ -2788,6 +2846,11 @@ design rules under a new name.</description>
 <wire x1="43.815" y1="42.545" x2="55.88" y2="42.545" width="0.3048" layer="16"/>
 <wire x1="27.94" y1="38.1" x2="31.115" y2="41.275" width="0.3048" layer="16"/>
 <wire x1="31.115" y1="41.275" x2="42.545" y2="41.275" width="0.3048" layer="16"/>
+<contactref element="SJ1" pad="2"/>
+<wire x1="9.525" y1="39.37" x2="7.62" y2="41.275" width="0.3048" layer="16"/>
+<wire x1="9.525" y1="39.37" x2="9.525" y2="38.1" width="0.3048" layer="16"/>
+<wire x1="9.525" y1="38.1" x2="8.255" y2="36.83" width="0.3048" layer="16"/>
+<wire x1="8.255" y1="36.83" x2="7.62" y2="36.83" width="0.3048" layer="16"/>
 </signal>
 <signal name="MTR-SPEED">
 <contactref element="U$1" pad="22"/>
@@ -3133,6 +3196,11 @@ design rules under a new name.</description>
 <wire x1="10.795" y1="64.77" x2="12.7" y2="66.675" width="0.3048" layer="1"/>
 <wire x1="12.7" y1="66.675" x2="12.7" y2="71.12" width="0.3048" layer="1"/>
 <wire x1="12.7" y1="71.12" x2="20.32" y2="78.74" width="0.3048" layer="1"/>
+<contactref element="SJ1" pad="1"/>
+<wire x1="5.08" y1="41.275" x2="3.175" y2="39.37" width="0.3048" layer="16"/>
+<wire x1="3.175" y1="39.37" x2="3.175" y2="38.1" width="0.3048" layer="16"/>
+<wire x1="4.445" y1="36.83" x2="3.175" y2="38.1" width="0.3048" layer="16"/>
+<wire x1="4.445" y1="36.83" x2="5.08" y2="36.83" width="0.3048" layer="16"/>
 </signal>
 <signal name="SERVO28">
 <contactref element="U$1" pad="14"/>
